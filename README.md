@@ -1,0 +1,2 @@
+This is a full-featured, role-based job search and application platform built using the MEEN stack (MongoDB, Express, EJS, and Node.js). The application is designed to support two distinct user groups: Recruiters, who can post and manage job listings, and Job Seekers (Users), who can browse, search, and apply for opportunities.
+The project demonstrates full-stack development skills, focusing on server-side rendering for a robust, dynamic user experience.
