@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Job</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+<form action="/recruiter/postJob" method="POST" class="bg-white p-8 rounded shadow-md w-[400px] space-y-4" >
+    <h2 class="text-xl font-bold text-center">Post a Job</h2>
+    <input type="text" name="title" placeholder="Job Title" required class="w-full border px-3 py-2 rounded" />
+    <textarea name="description" placeholder="Job Description" required class="w-full border px-3 py-2 rounded"></textarea>
+    <input type="text" name="location" placeholder="Location" required class="w-full border px-3 py-2 rounded" />
+    <input type="number" name="salary" placeholder="Salary" required class="w-full border px-3 py-2 rounded" />
+    <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Post</button>
+</form>
+</body>
+</html>
