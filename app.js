@@ -2,7 +2,17 @@ const express = require("express");
 const app = express();
 
 require("dotenv").config();
-require("./config/mongooseConnect");
+
+const mongoose = require("mongoose");
+
+mongoose
+  .connect(process.env.MONGODB_URI)
+  .then(() => {
+    console.log("MondoDB connected");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 const userRoutes = require("./routes/userRoutes");
 const jobsRoutes = require("./routes/jobsRoutes");
